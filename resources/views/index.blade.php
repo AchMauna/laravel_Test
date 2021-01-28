@@ -25,9 +25,8 @@
 			<td>{{ $p->produk_tipe }}</td>
 			<td>{{ $p->produk_platform }}</td>
 			<td>
-				<a href="/produk/edit/{{ $p->produk_id }}">Edit</a>
-				|
-				<a href="/produk/hapus/{{ $p->produk_id }}">Hapus</a>
+				<a href="{{ route('editData', $p->produk_id) }}">Edit</a>
+				<a href="{{ route('deleteData', $p->produk_id) }}">Hapus</a>
 			</td>
 		</tr>
 		@endforeach
