@@ -27,6 +27,13 @@ class produkController extends Controller
     // method untuk insert data ke table produk
     public function store(Request $request)
     {
+        //validasi data
+        $validated = $request->validate([
+            'nama' => 'required',
+            'tipe' => 'required',
+            'platform' => 'required',
+        ]);
+
         // insert data ke table produk
         DB::table('tabel_produk')->insert([
             'produk_nama' => $request->nama,
