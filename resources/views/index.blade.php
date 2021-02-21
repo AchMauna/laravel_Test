@@ -13,7 +13,7 @@
 						<th>Nama</th>
 						<th>Tipe</th>
 						<th>Platform</th>
-						<th>Opsi</th>
+						<th> </th>
 					</tr>
 					@foreach($produk as $key => $p)
 					<tr>
@@ -21,9 +21,9 @@
 						<td>{{ $p->produk_nama }}</td>
 						<td>{{ $p->produk_tipe }}</td>
 						<td>{{ $p->produk_platform }}</td>
-						<td>
-							<a type="button" class="btn btn-info btn-xs" href="{{ route('editData', $p->produk_id) }}">Edit</a>
-							<a type="button" class="btn btn-danger btn-xs" href="{{ route('deleteData', $p->produk_id) }}">Hapus</a>
+						<td class="text-right">
+							<a class="btn btn-info btn-xs" href="{{ route('editData', $p->produk_id) }}">Edit</a>
+							<a class="btn btn-danger btn-xs" href="{{ route('deleteData', $p->produk_id) }}">Hapus</a>
 						</td>
 					</tr>
 					@endforeach

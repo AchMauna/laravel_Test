@@ -42,7 +42,6 @@ header{
 }
 
     /*Animasi Teks*/
-
 .text-area{
     font-size: 60px;
     font-family: roboto;
@@ -86,7 +85,7 @@ header{
     animation-delay: .9s;
 }
 .text-area span:nth-of-type(11){
-    animation-delay: .10s;
+    animation-delay: .9s;
 }
 
 @keyframes animate{
@@ -103,7 +102,6 @@ header{
 }
 
 /*Responsive*/
-
 @media (max-widht:500px){
     .banner-text p{
         display: none;
